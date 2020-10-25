@@ -1,22 +1,10 @@
-/* ----------------------------------------------------------------- */
+/* Estilos globales*/
 
-/* GLOBAL STYLES */
-
-/* ----------------------------------------------------------------- */
 body {
   color: #1a1a1a;
   background-color: pink;
-  font-family: "Poppins", sans-serif;
+  font-family: "Trispace", sans-serif;
   overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -32,129 +20,18 @@ li {
   padding: 0 0 10px;
 }
 
-/* ----------------------------------------------------------------- */
-
-/*                      PRELOADER                                   */
-
-/* ----------------------------------------------------------------- */
-
-.preloader-outer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #0c0c0c;
-  z-index: 6;
-  overflow: hidden;
-}
-
-.preloader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 80px;
-  height: 60px;
-  margin: -30px 0 0 -40px;
-}
-
-.preloader .lines {
-  width: 80px;
-  height: 40px;
-  position: absolute;
-}
-
-.preloader .lines .line {
-  width: 80px;
-  height: 1px;
-  background-color: #fff;
-  position: absolute;
-  clip: rect(0, 0, 20px, 0);
-}
-
-.preloader .lines .line.line-1 {
-  top: 0;
-  animation: slide 2s ease 0.1s infinite;
-}
-
-.preloader .lines .line.line-2 {
-  top: 15px;
-  animation: slide 2s ease 0.25s infinite;
-}
-
-.preloader .lines .line.line-3 {
-  top: 30px;
-  animation: slide 2s ease 0.5s infinite;
-}
-
-.preloader .loading-text {
-  position: absolute;
-  top: 50px;
-  text-align: center;
-  width: 100%;
-  color: #fff;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
-  line-height: 10px;
-  height: 10px;
-  text-transform: uppercase;
-}
-
-@keyframes slide {
-  0% {
-    clip: rect(0, 0, 20px, 0);
-  }
-
-  30% {
-    clip: rect(0, 80px, 20px, 0);
-  }
-
-  50% {
-    clip: rect(0, 80px, 20px, 0);
-  }
-
-  80% {
-    clip: rect(0, 80px, 20px, 80);
-  }
-
-  100% {
-    clip: rect(0, 80px, 20px, 80);
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-/* ----------------------------------------------------------------- */
-
-/*                      LAYOUT                                      */
-
-/* ----------------------------------------------------------------- */
+/* layout */
 
 .wrapper {
   width: 1000px;
   margin: 0 auto;
 }
 
-/* ----------------------------------------------------------------- */
-
-/*                       HEADER                                      */
-
-/* ----------------------------------------------------------------- */
+/*-----------------------------------------------------------------*/
+/*                      HEADER                                     */
+/*-----------------------------------------------------------------*/
 .header {
-  background: $uoc-corporate;
+  background: $color1;
   padding: 46px;
   position: fixed;
   height: 100%;
@@ -195,7 +72,7 @@ li {
   font-size: 15px;
   font-weight: 300;
 }
-
+/* === Social Icons === */
 .header .social-icons {
   margin: 0 0 34px;
 }
@@ -222,7 +99,7 @@ li {
 .header .social-icons ul li:last-child {
   padding-right: 0;
 }
-
+/* === Navigation === */
 .header .main-nav ul {
   list-style: none;
   padding: 0;
@@ -247,13 +124,11 @@ li {
   transition: all 0.3s ease-in-out;
 }
 
-/*
 .header .main-nav ul li a:hover,
 .header .main-nav ul li a:focus {
   color: #fff;
   text-decoration: none;
 }
-*/
 
 /* === Copyright === */
 .header .copyright {
@@ -268,6 +143,7 @@ li {
   font-weight: 300;
 }
 
+/* === Mobile Menu Bar === */
 .header .mobile-bar {
   background: rgba(12, 12, 12, 0.75);
   color: #fff;
@@ -289,14 +165,12 @@ li {
   cursor: pointer;
 }
 
-/*
 .header .bar,
 .header .bar:after,
 .header .bar:before {
   width: 30px;
   height: 3px;
 }
-*/
 
 .header .bar {
   position: relative;
@@ -309,7 +183,6 @@ li {
   background: rgba(255, 255, 255, 0);
 }
 
-/*
 .header .bar:before {
   content: "";
   position: absolute;
@@ -319,9 +192,7 @@ li {
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
     transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-*/
 
-/*
 .header .bar:after {
   content: "";
   position: absolute;
@@ -345,13 +216,8 @@ li {
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
     transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-*/
 
-/* ----------------------------------------------------------------- */
-
-/*                      MAIN CONTENT                               */
-
-/* ----------------------------------------------------------------- */
+/* main content */
 
 .main-content {
   background: #fff;
@@ -387,7 +253,6 @@ li {
   position: relative;
 }
 
-/* === Section Header Light === */
 .main-content section .section-header-light {
   margin-bottom: 60px;
   position: relative;
@@ -405,7 +270,6 @@ li {
   position: relative;
 }
 
-/*
 .main-content section .section-header-light h2:before {
   content: "";
   position: absolute;
@@ -417,9 +281,7 @@ li {
   border-left: solid 3px #fff !important;
   border-top: solid 3px #fff !important;
 }
-*/
 
-/*
 .main-content section .section-header-light h2:after {
   content: "";
   position: absolute;
@@ -431,13 +293,8 @@ li {
   border-right: solid 3px #fff !important;
   border-bottom: solid 3px #fff !important;
 }
-*/
 
-/* ----------------------------------------------------------------- */
-
-/*                      SECTION ABOUT                              */
-
-/* ----------------------------------------------------------------- */
+/* about section */
 
 .about .intro ul.info {
   margin-top: 40px;
@@ -495,11 +352,7 @@ li {
   border-radius: 3px;
 }
 
-/* ----------------------------------------------------------------- */
-
-/*                      SECTION RESUME                             */
-
-/* ----------------------------------------------------------------- */
+/* resume sectio */
 
 .resume .top-item {
   margin-top: 0 !important;
@@ -531,11 +384,7 @@ li {
   margin-bottom: 0;
 }
 
-/* ----------------------------------------------------------------- */
-
-/*                      SECTION WORKS                              */
-
-/* ----------------------------------------------------------------- */
+/* works */
 
 .works .control {
   margin-bottom: 30px;
@@ -604,7 +453,6 @@ li {
   z-index: 2;
 }
 
-/*
 .works .item-outer .item .title:before {
   -ms-transform: translate(-45px, -45px);
   -webkit-transform: translate(-45px, -45px);
@@ -624,7 +472,6 @@ li {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-*/
 
 .works .item-outer .item .title .inner {
   text-align: center;
@@ -639,9 +486,9 @@ li {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin: 0 0 5px;
-  -ms-transform: translateY(-200);
-  -webkit-transform: translateY(-200);
-  transform: translateY(-200);
+  -ms-transform: translateY(-200px);
+  -webkit-transform: translateY(-200px);
+  transform: translateY(-200px);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -653,9 +500,9 @@ li {
   display: block;
   font-size: 12px;
   font-weight: 100;
-  -ms-transform: translateY(220);
-  -webkit-transform: translateY(220);
-  transform: translateY(220);
+  -ms-transform: translateY(220px);
+  -webkit-transform: translateY(220px);
+  transform: translateY(220px);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -711,7 +558,6 @@ li {
   transform: scale(1.1);
 }
 
-/*
 .works .item-outer .item:hover .title:before {
   -ms-transform: translate(0);
   -webkit-transform: translate(0);
@@ -723,17 +569,13 @@ li {
   -webkit-transform: translate(-45px, -45px);
   transform: translate(-45px, -45px);
 }
-*/
 
 .works .item-outer .mix {
   padding: 5px;
 }
 
-/* ----------------------------------------------------------------- */
+/* testiomonials section */
 
-/*                      SECTION TESTIMONIALS                       */
-
-/* ----------------------------------------------------------------- */
 .testimonials .item .thumb {
   width: 80px;
   height: 80px;
@@ -743,42 +585,7 @@ li {
 
 .testimonials .item .text span.author {
   color: #b1b1b1;
-  font-family: "Poppins", sans-serif;
   font-size: 12px;
-}
-
-/* ----------------------------------------------------------------- */
-
-/*                      SECTION BLOG                               */
-
-/* ----------------------------------------------------------------- */
-
-.blog .item {
-  margin-bottom: 30px;
-}
-
-.blog .item .thumb {
-  height: 180px;
-  overflow: hidden;
-}
-
-.blog .item .thumb img {
-  width: 100%;
-  height: auto;
-}
-
-.blog .item .text h2 {
-  font-size: 18px;
-  font-weight: 400;
-  margin: 0 0 15px;
-}
-
-.blog .item .text p {
-  margin: 0 0 15px;
-}
-
-.blog .blog-single img {
-  margin-bottom: 20px;
 }
 
 .btn-default {
@@ -816,7 +623,7 @@ li {
   line-height: 1px;
   color: #fff;
   text-align: center;
-  background-color: #f74470;
+  background-color: $color2 !important;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: width 0.6s ease;
@@ -868,11 +675,7 @@ li {
   margin-top: 30px;
 }
 
-/* ----------------------------------------------------------------- */
-
-/*                      RESPONSIVE                                  */
-
-/* ----------------------------------------------------------------- */
+/* responsive */
 
 @media only screen and (min-width: 480) and (max-width: 767px) {
   .works .item-outer .mix {
@@ -886,9 +689,9 @@ li {
   }
 
   .header {
-    -ms-transform: translateX(-260);
-    -webkit-transform: translateX(-260);
-    transform: translateX(-260);
+    -ms-transform: translateX(-260px);
+    -webkit-transform: translateX(-260px);
+    transform: translateX(-260px);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -910,9 +713,9 @@ li {
   }
 
   .main-pushed {
-    -ms-transform: translateX(260);
-    -webkit-transform: translateX(260);
-    transform: translateX(260);
+    -ms-transform: translateX(260px);
+    -webkit-transform: translateX(260px);
+    transform: translateX(260px);
   }
 
   .works .item-outer .item {
@@ -978,4 +781,9 @@ li {
 
 .w-60 {
   width: 60%;
+}
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
 }
