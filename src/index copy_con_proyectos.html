@@ -44,18 +44,18 @@
         </div>
 
         <div class="header__social-icons">
-          <ul class="list-icons">
-            <li class="list-icons__item">
+          <ul>
+            <li>
               <a href="#"
                 ><i class="fab fa-facebook" aria-hidden="true"></i>
               </a>
             </li>
-            <li class="list-icons__item">
+            <li>
               <a href="https://twitter.com/guangle84"
                 ><i class="fab fa-twitter" aria-hidden="true"></i
               ></a>
             </li>
-            <li class="list-icons__item">
+            <li>
               <a
                 href="https://www.linkedin.com/in/juanjesusgutierrez/?locale=es_ES"
                 ><i class="fab fa-linkedin"></i
@@ -64,21 +64,17 @@
           </ul>
         </div>
 
-        <nav class="">
-          <ul class="header-menu navigation">
-            <li class="header-menu__item"><a href="#sobremi">SOBRE MÍ</a></li>
-            <li class="header-menu__item">
-              <a href="#experiencia">EXPERIENCIA</a>
-            </li>
-            <li class="header-menu__item"><a href="#estudios">ESTUDIOS</a></li>
-            <li class="header-menu__item">
-              <a href="#referencias">TRABAJOS</a>
-            </li>
-            <li class="header-menu__item"><a href="#contactar">CONTACTO</a></li>
+        <nav class="header__menu">
+          <ul class="navigation">
+            <li><a href="#sobremi">SOBRE MÍ</a></li>
+            <li><a href="#experiencia">EXPERIENCIA</a></li>
+            <li><a href="#estudios">ESTUDIOS</a></li>
+            <li><a href="#referencias">TRABAJOS</a></li>
+            <li><a href="#contactar">CONTACTO</a></li>
           </ul>
         </nav>
 
-        <div class="copiright">
+        <div class="header__copiright">
           <span>Herramientas HTML y CSS II, PEC1. UOC 2020</span>
         </div>
       </header>
@@ -383,6 +379,103 @@
                   </li>
                   <li>..etc..</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="seccion-cv works clearfix" id="trabajos">
+          <div class="seccion-cv__cabecera">
+            <h2>Trabajos</h2>
+          </div>
+
+          <div
+            class="item-outer row clearfix"
+            style="padding: 0px; position: relative; height: 390px"
+          >
+            <div
+              class="col-md-4 col-sm-6 col-xs-12"
+              data-category="1"
+              data-sort="value"
+              style="
+                opacity: 1;
+                transform: scale(1) translate3d(0px, 0px, 0px);
+                backface-visibility: hidden;
+                perspective: 1000px;
+                transform-style: preserve-3d;
+                position: absolute;
+                transition: all 0.5s ease-out 0ms;
+                pointer-events: auto;
+              "
+            >
+              <div class="item">
+                <a href="https://sede.dipucadiz.es/" class="work-image">
+                  <div class="title">
+                    <div class="inner">
+                      <h2>Sede electrónica</h2>
+                      <span>Diputación de Cádiz</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="overlay"></div>
+                <img
+                  src="./assets/images/sede.png"
+                  alt="Sede electrónica diputación"
+                />
+              </div>
+            </div>
+
+            <div
+              class="col-md-4 col-sm-6 col-xs-12"
+              data-category="2"
+              data-sort="value"
+              style="
+                opacity: 1;
+                transform: scale(1) translate3d(201px, 0px, 0px);
+                backface-visibility: hidden;
+                perspective: 1000px;
+                transform-style: preserve-3d;
+                position: absolute;
+                transition: all 0.5s ease-out 0ms;
+                pointer-events: auto;
+              "
+            >
+              <div class="item">
+                <a
+                  href="https://administracionelectronica.gob.es/ctt/tsa"
+                  class="work-image"
+                >
+                  <div class="title">
+                    <div class="inner">
+                      <h2>TS@</h2>
+                      <span>Time Stamp Authority</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="overlay"></div>
+                <img src="./assets/images/tsa.png" alt="portfolio" />
+              </div>
+            </div>
+
+            <div
+              class="col-md-4 col-sm-6 col-xs-12 proyecto"
+              data-category="1"
+              data-sort="value"
+            >
+              <div class="item">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.guangle.altovoltaje"
+                  class="work-image"
+                >
+                  <div class="title">
+                    <div class="inner">
+                      <h2>Alto Voltaje</h2>
+                      <span>Juego Android</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="overlay"></div>
+                <img src="./assets/images/altovoltaje.png" alt="portfolio" />
               </div>
             </div>
           </div>
