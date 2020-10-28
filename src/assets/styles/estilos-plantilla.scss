@@ -1,0 +1,130 @@
+/* Estilos heredados de una plantilla html para CV basada en bootstrap */
+
+/* Nos hemos apoyado en la plantilla para tener algunas propiedades relacionas con el comportamiento responsive
+asi como el icono 'hamburguesa' que mostrará u ocultará el menú lateral en base al dispositivo donde se está
+visualizando la web */
+
+/* === Mobile Menu Bar === */
+.header .mobile-bar {
+  position: absolute;
+  right: -59px;
+  z-index: 3;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  background: rgba(12, 12, 12, 0.75);
+}
+
+.header .hamburger-menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  width: 30px;
+  height: 55px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.header .bar,
+.header .bar::after,
+.header .bar::before {
+  width: 30px;
+  height: 3px;
+}
+
+.header .bar {
+  position: relative;
+  background: #fff;
+  transition: all 0 300ms;
+  transform: translateY(25px);
+}
+
+.header .bar.animate {
+  background: rgba(255, 255, 255, 0);
+}
+
+.header .bar::before {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  content: "";
+  background: #fff;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1) transform 300ms
+    cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header .bar::after {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  content: "";
+  background: #fff;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1) transform 300ms
+    cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header .bar.animate::after {
+  top: 0;
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1) transform 300ms 300ms
+    cubic-bezier(0.23, 1, 0.32, 1);
+  transform: rotate(45deg);
+}
+
+.header .bar.animate::before {
+  bottom: 0;
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1) transform 300ms 300ms
+    cubic-bezier(0.23, 1, 0.32, 1);
+  transform: rotate(-45deg);
+}
+
+/* responsive */
+
+@media only screen and (max-width: 991px) {
+  .contenedor {
+    width: 100%;
+  }
+
+  .header {
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-260px);
+  }
+
+  .pushed {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .main-pushed {
+    transform: translateX(260px);
+  }
+}
+
+@media only screen and (max-width: 480) {
+  .main-content section {
+    padding: 60px 30px;
+  }
+}
+
+@media only screen and (max-height: 600) {
+  .header__nombre {
+    margin: 15px 0;
+  }
+
+  .header-menu__item {
+    padding-bottom: 10px;
+  }
+
+  .header__social-icons {
+    margin: 0 0 15px;
+  }
+
+  .copyright {
+    position: relative;
+    bottom: -18px;
+  }
+}

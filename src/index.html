@@ -35,28 +35,29 @@
         </div>
 
         <div class="header__avatar">
-          <img src="assets/images/jjgr.jpg" alt="avatar" />
+          <img class="header__img" src="assets/images/jjgr.jpg" alt="avatar" />
         </div>
 
         <div class="header__nombre">
-          <h1>Juan Jesús Gutiérrez</h1>
-          <span>Desarrollador Java</span>
+          <h1 class="header__titulo">Juan Jesús Gutiérrez</h1>
+          <span class="header__texto">Desarrollador Java</span>
         </div>
 
         <div class="header__social-icons">
-          <ul class="list-icons">
-            <li class="list-icons__item">
-              <a href="#"
+          <ul class="lista-iconos">
+            <li class="lista-iconos__item">
+              <a class="lista-iconos__link" href="#"
                 ><i class="fab fa-facebook" aria-hidden="true"></i>
               </a>
             </li>
-            <li class="list-icons__item">
-              <a href="https://twitter.com/guangle84"
+            <li class="lista-iconos__item">
+              <a class="lista-iconos__link" href="https://twitter.com/guangle84"
                 ><i class="fab fa-twitter" aria-hidden="true"></i
               ></a>
             </li>
-            <li class="list-icons__item">
+            <li class="lista-iconos__item">
               <a
+                class="lista-iconos__link"
                 href="https://www.linkedin.com/in/juanjesusgutierrez/?locale=es_ES"
                 ><i class="fab fa-linkedin"></i
               ></a>
@@ -66,20 +67,28 @@
 
         <nav class="">
           <ul class="header-menu navigation">
-            <li class="header-menu__item"><a href="#sobremi">SOBRE MÍ</a></li>
             <li class="header-menu__item">
-              <a href="#experiencia">EXPERIENCIA</a>
+              <a class="header-menu__link" href="#sobremi">SOBRE MÍ</a>
             </li>
-            <li class="header-menu__item"><a href="#estudios">ESTUDIOS</a></li>
             <li class="header-menu__item">
-              <a href="#referencias">TRABAJOS</a>
+              <a class="header-menu__link" href="#experiencia">EXPERIENCIA</a>
             </li>
-            <li class="header-menu__item"><a href="#contactar">CONTACTO</a></li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="#estudios">ESTUDIOS</a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="#referencias">TRABAJOS</a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="#contactar">CONTACTO</a>
+            </li>
           </ul>
         </nav>
 
         <div class="copiright">
-          <span>Herramientas HTML y CSS II, PEC1. UOC 2020</span>
+          <span class="copiright__texto"
+            >Herramientas HTML y CSS II, PEC1. UOC 2020</span
+          >
         </div>
       </header>
 
@@ -100,13 +109,13 @@
             </a>
           </div>
 
-          <div class="intro">
-            <p class="justify">
+          <div class="sobre-mi__texto">
+            <p class="">
               Licenciado en Ingeniería Informática por la Universidad de Sevilla
               en el año 2007, actualmente trabajo en el desarrollo y análisis de
               aplicaciones informáticas principalmente con tecnologías JEE.
             </p>
-            <p class="justify">
+            <p class="">
               La mayoría de los proyectos en los que he participado han sido
               aplicaciones web Java haciendo uso de los principales frameworks y
               herramientas de desarrollo web y JEE: Struts-2, Spring, Spring
@@ -123,14 +132,14 @@
 
           <div class="sobre-mi__habilidades">
             <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-12 item">
+              <div class="col-md-6 col-sm-6 col-xs-12 sobre-mi__habilidad">
                 <div class="skill-info clearfix">
-                  <h3 class="float-left">Java</h3>
-                  <span class="float-right">90%</span>
+                  <h3 class="habilidad__titulo float-left">Java</h3>
+                  <span class="habilidad__avance float-right">90%</span>
                 </div>
                 <div class="progress">
                   <div
-                    class="progress-bar w-90"
+                    class="progress__bar w-90"
                     role="progressbar"
                     aria-valuenow="90"
                     aria-valuemin="0"
@@ -139,14 +148,14 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-sm-6 col-xs-12 item">
+              <div class="col-md-6 col-sm-6 col-xs-12 sobre-mi__habilidad">
                 <div class="skill-info clearfix">
-                  <h3 class="float-left">Spring</h3>
-                  <span class="float-right">80%</span>
+                  <h3 class="habilidad__titulo float-left">Spring</h3>
+                  <span class="habilidad__avance float-right">80%</span>
                 </div>
                 <div class="progress">
                   <div
-                    class="progress-bar w-80"
+                    class="progress__bar w-80"
                     role="progressbar"
                     aria-valuenow="80"
                     aria-valuemin="0"
@@ -155,14 +164,14 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-sm-6 col-xs-12 item">
+              <div class="col-md-6 col-sm-6 col-xs-12 sobre-mi__habilidad">
                 <div class="skill-info clearfix">
-                  <h3 class="float-left">Hibernate</h3>
-                  <span class="float-right">75%</span>
+                  <h3 class="habilidad__titulo float-left">Hibernate</h3>
+                  <span class="habilidad__avance float-right">75%</span>
                 </div>
                 <div class="progress">
                   <div
-                    class="progress-bar w-75"
+                    class="progress__bar w-75"
                     role="progressbar"
                     aria-valuenow="45"
                     aria-valuemin="0"
@@ -171,14 +180,14 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-sm-6 col-xs-12 item">
+              <div class="col-md-6 col-sm-6 col-xs-12 sobre-mi__habilidad">
                 <div class="skill-info clearfix">
-                  <h3 class="float-left">HTML, CSS</h3>
-                  <span class="float-right">75%</span>
+                  <h3 class="habilidad__titulo float-left">HTML, CSS</h3>
+                  <span class="habilidad__avance float-right">75%</span>
                 </div>
                 <div class="progress">
                   <div
-                    class="progress-bar w-75"
+                    class="progress__bar w-75"
                     role="progressbar"
                     aria-valuenow="75"
                     aria-valuemin="0"
@@ -187,14 +196,14 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-sm-6 col-xs-12 item">
+              <div class="col-md-6 col-sm-6 col-xs-12 sobre-mi__habilidad">
                 <div class="skill-info clearfix">
-                  <h3 class="float-left">Javascript</h3>
-                  <span class="float-right">75%</span>
+                  <h3 class="habilidad__titulo float-left">Javascript</h3>
+                  <span class="habilidad__avance float-right">75%</span>
                 </div>
                 <div class="progress">
                   <div
-                    class="progress-bar w-75"
+                    class="progress__bar w-75"
                     role="progressbar"
                     aria-valuenow="75"
                     aria-valuemin="0"
@@ -203,14 +212,14 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-sm-6 col-xs-12 item">
+              <div class="col-md-6 col-sm-6 col-xs-12 sobre-mi__habilidad">
                 <div class="skill-info clearfix">
-                  <h3 class="float-left">SQL</h3>
-                  <span class="float-right">60%</span>
+                  <h3 class="habilidad__titulo float-left">SQL</h3>
+                  <span class="habilidad__avance float-right">60%</span>
                 </div>
                 <div class="progress">
                   <div
-                    class="progress-bar w-60"
+                    class="progress__bar w-60"
                     role="progressbar"
                     aria-valuenow="60"
                     aria-valuemin="0"
@@ -230,9 +239,11 @@
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="cv__item cv__item--destacado">
-                <h2>EPICSA</h2>
-                <span>DESARROLLADOR JEE | MARZO, 2016 - ACTUALIDAD</span>
-                <p class="justify">
+                <h2 class="cv__titulo">EPICSA</h2>
+                <span class="cv__subtitulo"
+                  >DESARROLLADOR JEE | MARZO, 2016 - ACTUALIDAD</span
+                >
+                <p class="cv__texto">
                   Análisis y programación en diferentes proyectos web dentro del
                   ámbito de la tramitación electrónica de la Diputación
                   Provincial de Cádiz, realizando trabajos de desarrollo,
@@ -241,7 +252,7 @@
                   de tramitación (contratación, tr@diz, SAM, tarcon,..),
                   generador de expedientes, órganos colegiados, decreto y MOAD.
                 </p>
-                <p class="justify">
+                <p class="cv__texto cv__texto--destacado">
                   Tecnologías: JEE, Struts, Struts-2, Spring MVC, Hibernate,
                   Spring, Spring-security.
                 </p>
@@ -250,25 +261,29 @@
 
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="cv__item">
-                <h2>ADMIRAL</h2>
-                <span>ANALISTA | ENERO 2016 - MARZO 2016</span>
-                <p class="justify">
+                <h2 class="cv__titulo">ADMIRAL</h2>
+                <span class="cv__subtitulo"
+                  >ANALISTA | ENERO 2016 - MARZO 2016</span
+                >
+                <p class="cv__texto">
                   Desarollo y toma de requisitos de una plataforma de seguros de
                   automóviles para Admiral Group.
                 </p>
-                <p class="justify">Tecnologías: Guidewire</p>
+                <p class="cv__texto">Tecnologías: Guidewire</p>
               </div>
             </div>
 
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="cv__item">
-                <h2>COCOMORE AG</h2>
-                <span>PROGRAMADOR | JULIO 2015 - NOVIEMBRE 2015</span>
-                <p class="justify">
+                <h2 class="cv__titulo">COCOMORE AG</h2>
+                <span class="cv__subtitulo"
+                  >PROGRAMADOR | JULIO 2015 - NOVIEMBRE 2015</span
+                >
+                <p class="cv__texto">
                   Desarrollo de varios proyectos web usando diversas tecnologías
                   como Salesforce, PHP-moodle y ReactJS.
                 </p>
-                <p class="justify">
+                <p class="cv__texto">
                   Tecnologías: Salesforce, Apex, VisualForce, PHP, Moodle,
                   Symfony, MySQL, jQuery, SASS, ReactJS, Jenkins.
                 </p>
@@ -277,9 +292,11 @@
 
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="cv__item">
-                <h2>FUJITSU</h2>
-                <span>ANALISTA PROGRAMADOR | ENERO 2011 - JULIO 2015</span>
-                <p class="justify">
+                <h2 class="cv__titulo">FUJITSU</h2>
+                <span class="cv__subtitulo"
+                  >ANALISTA PROGRAMADOR | ENERO 2011 - JULIO 2015</span
+                >
+                <p class="cv__texto">
                   Análisis y programación de diferentes aplicaciones web JEE y
                   .NET dentro del ámbito del proyecto de la gestión y
                   mantenimiento de las infraestructuras tecnológicas del
@@ -287,7 +304,7 @@
                   requisitos, análisis funcional y técnico, desarrollo y
                   mantenimiento correctivo/evolutivo de aplicaciones.
                 </p>
-                <p class="justify">
+                <p class="cv__texto">
                   Principales tecnologías: JEE, Hibernate, Struts, Struts-2,
                   Spring MVC, Spring core, Spring Security, Hibernate HTML5,
                   jQuery, css3, bootstrap, rest, axis-2, c#, mvc.net 5, Jenkins.
@@ -297,9 +314,11 @@
 
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="cv__item">
-                <h2>STERIA</h2>
-                <span>PROGRAMADOR | SEPTIEMBRE 2008 - ENERO 2011</span>
-                <p class="justify">
+                <h2 class="cv__titulo">STERIA</h2>
+                <span class="cv__subtitulo"
+                  >PROGRAMADOR | SEPTIEMBRE 2008 - ENERO 2011</span
+                >
+                <p class="cv__texto">
                   Desarrollo y análisis en diversos proyectos de administración
                   electrónica para la Junta de Andalucía y el Ministerio de
                   Administraciones Públicas: TS@ ( Time Stamp Authority ),
@@ -309,7 +328,7 @@
                   funcional y técnico, desarrollo y mantenimiento
                   correctivo/evolutivo de aplicaciones.
                 </p>
-                <p class="justify">
+                <p class="cv__texto">
                   Tecnologías: JEE, Hibernate, Struts, spring jgroups, librerías
                   criptográficas, BouncyCastle, iaik, Servicios web seguros,
                   Oracle, Postgree, Tomcat.
@@ -319,9 +338,11 @@
 
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="cv__item">
-                <h2>EVERIS</h2>
-                <span>PROGRAMADOR | JULIO 2007 - SEPTIEMBRE 2008</span>
-                <p class="justify">
+                <h2 class="cv__titulo">EVERIS</h2>
+                <span class="cv__subtitulo"
+                  >PROGRAMADOR | JULIO 2007 - SEPTIEMBRE 2008</span
+                >
+                <p class="cv__texto">
                   Programador web Java de una plataforma de tramitación
                   electrónica sobre Trew@ haciendo uso de las principales
                   herramientas de Administración electrónica de la Junta de
@@ -341,12 +362,12 @@
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="cv__item cv__item--destacado">
-                <h2>
+                <h2 class="cv__titulo">
                   Máster Universitario en Desarrollo de sitios y aplicaciones
                   web
                 </h2>
-                <span>Cursando actualmente</span>
-                <p>
+                <span class="cv__subtitulo">Cursando actualmente</span>
+                <p class="cv__texto">
                   El máster universitario de Desarrollo de Sitios y Aplicaciones
                   Web forma profesionales especialistas en este ámbito, capaces
                   de dar respuesta a la creciente demanda de profesionales en
@@ -357,9 +378,9 @@
 
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="cv__item">
-                <h2>Ingeniería Informática Superior</h2>
-                <span>JUNIO, 2007</span>
-                <p>
+                <h2 class="cv__titulo">Ingeniería Informática Superior</h2>
+                <span class="cv__subtitulo">JUNIO, 2007</span>
+                <p class="cv__texto">
                   Escuela Técnica Superior de Ingeniería Informática, 2002-2007
                   Universidad de Sevilla
                 </p>
@@ -368,20 +389,22 @@
 
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="cv__item">
-                <h2>Cursos</h2>
-                <ul>
-                  <li>Liferay 7, GrupoID, 2018</li>
-                  <li>
+                <h2 class="cv__titulo">Cursos</h2>
+                <ul class="cursos">
+                  <li class="cursos__item">Liferay 7, GrupoID, 2018</li>
+                  <li class="cursos__item">
                     Google Developer Challenge Scholarship: Android Basics, 2017
                   </li>
-                  <li>Alfresco 5, Grupo ID, 2017</li>
-                  <li>M101J: MongoDB for Java Developers, 2013</li>
-                  <li>Integración con @firma, 2008</li>
-                  <li>Desarrollo sobre Alfresco, 2008</li>
-                  <li>
+                  <li class="cursos__item">Alfresco 5, Grupo ID, 2017</li>
+                  <li class="cursos__item">
+                    M101J: MongoDB for Java Developers, 2013
+                  </li>
+                  <li class="cursos__item">Integración con @firma, 2008</li>
+                  <li class="cursos__item">Desarrollo sobre Alfresco, 2008</li>
+                  <li class="cursos__item">
                     Desarrollo de componentes web JEE 5.0, CEA, 2008 (270 horas)
                   </li>
-                  <li>..etc..</li>
+                  <li class="cursos__item">..etc..</li>
                 </ul>
               </div>
             </div>
@@ -392,78 +415,72 @@
           <div class="seccion-cv__cabecera">
             <h2>Referencias</h2>
           </div>
-
-          <div class="owl-wrapper-outer">
-            <div
-              class="owl-wrapper"
-              style="width: 3600px; left: 0px; display: block"
-            >
-              <div class="item">
-                <div class="row">
-                  <div class="col-md-2 col-sm-2 d-none d-sm-block">
-                    <div class="thumb">
-                      <img
-                        src="./assets/images/person1.png"
-                        alt="testimonial-customer"
-                      />
-                    </div>
-                  </div>
-                  <div class="text col-md-10 col-sm-10 col-xs-12">
-                    <p>
-                      Juan Jesus es un profesional de gran talento, iniciativa,
-                      conocimiento y sobre todo humilde, sin nada que esconder.
-                      Fidedigno, confidente, resolutivo; cualquier otro adjetivo
-                      elogioso es digno de su descripción.
-                    </p>
-                    <span class="author">- Daniel L. -</span>
+          <div class="row">
+            <div class="item">
+              <div class="row">
+                <div class="col-md-2 col-sm-2 d-none d-sm-block">
+                  <div class="referencia-item__img">
+                    <img
+                      src="./assets/images/person1.png"
+                      alt="testimonial-customer"
+                    />
                   </div>
                 </div>
-              </div>
-
-              <div class="item">
-                <div class="row">
-                  <div class="col-md-2 col-sm-2 d-none d-sm-block">
-                    <div class="thumb">
-                      <img
-                        src="./assets/images/person2.png"
-                        alt="testimonial-customer"
-                      />
-                    </div>
-                  </div>
-                  <div class="text col-md-10 col-sm-10 col-xs-12">
-                    <p>
-                      Colaboramos en varios proyectos y trabajos durante los
-                      estudios en la universidad. Siempre destacó por su
-                      constancia, capacidad de organización y planificación. En
-                      el trabajo en equipo tomaba el liderazgo e iniciativa del
-                      proyecto cuando las cosas se ponían feas, motivando al
-                      equipo y llevándolo finalmente a buen puerto.
-                    </p>
-                    <span class="author">- Pablo I.-</span>
-                  </div>
+                <div class="text col-md-10 col-sm-10 col-xs-12">
+                  <p>
+                    Juan Jesus es un profesional de gran talento, iniciativa,
+                    conocimiento y sobre todo humilde, sin nada que esconder.
+                    Fidedigno, confidente, resolutivo; cualquier otro adjetivo
+                    elogioso es digno de su descripción.
+                  </p>
+                  <span class="referencia-item__autor">- Daniel L. -</span>
                 </div>
               </div>
+            </div>
 
-              <div class="item">
-                <div class="row">
-                  <div class="col-md-2 col-sm-2 d-none d-sm-block">
-                    <div class="thumb">
-                      <img
-                        src="./assets/images/person3.png"
-                        alt="testimonial-customer"
-                      />
-                    </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-md-2 col-sm-2 d-none d-sm-block">
+                  <div class="referencia-item__img">
+                    <img
+                      src="./assets/images/person2.png"
+                      alt="testimonial-customer"
+                    />
                   </div>
-                  <div class="text col-md-10 col-sm-10 col-xs-12">
-                    <p>
-                      Juan Jesús transmite profesionalidad, seriedad y capacidad
-                      de trabajo. En la oficina está muy bien considerado por su
-                      vasto conocimiento técnico en diferentes ramas
-                      tecnológicas, talento en el análisis y capacidad para
-                      enfrentarse a nuevos retos.
-                    </p>
-                    <span class="author">- Fernando R. -</span>
+                </div>
+                <div class="text col-md-10 col-sm-10 col-xs-12">
+                  <p>
+                    Colaboramos en varios proyectos y trabajos durante los
+                    estudios en la universidad. Siempre destacó por su
+                    constancia, capacidad de organización y planificación. En el
+                    trabajo en equipo tomaba el liderazgo e iniciativa del
+                    proyecto cuando las cosas se ponían feas, motivando al
+                    equipo y llevándolo finalmente a buen puerto.
+                  </p>
+                  <span class="referencia-item__autor">- Pablo I.-</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-md-2 col-sm-2 d-none d-sm-block">
+                  <div class="referencia-item__img">
+                    <img
+                      src="./assets/images/person3.png"
+                      alt="testimonial-customer"
+                    />
                   </div>
+                </div>
+                <div class="text col-md-10 col-sm-10 col-xs-12">
+                  <p>
+                    Juan Jesús transmite profesionalidad, seriedad y capacidad
+                    de trabajo. En la oficina está muy bien considerado por su
+                    vasto conocimiento técnico en diferentes ramas tecnológicas,
+                    talento en el análisis y capacidad para enfrentarse a nuevos
+                    retos.
+                  </p>
+                  <span class="referencia-item__autor">- Fernando R. -</span>
                 </div>
               </div>
             </div>
