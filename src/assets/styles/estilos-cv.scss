@@ -90,18 +90,18 @@ p {
 .lista-iconos__item {
   display: inline-block;
   padding: 0 20px 0 0;
-  color: $color3;
   font-size: 16px;
+  color: $color3;
 }
 
 .lista-iconos__link {
-  color: $color3;
   font-size: 16px;
+  color: $color3;
 }
 
 .lista-iconos__link:hover {
-  color: $color3;
   font-size: 18px;
+  color: $color3;
 }
 
 .lista-iconos__item:last-child {
@@ -231,8 +231,8 @@ p {
 }
 
 .sobre-mi__llamar:hover {
-  color: $color3;
   font-size: 14px;
+  color: $color3;
 }
 
 .cv__item--destacado {
@@ -265,8 +265,8 @@ p {
 }
 
 .cv__texto--destacado {
-  border: 1px $color1 dashed;
   padding: 2px;
+  border: 1px $color1 dashed;
 }
 
 .cursos {
@@ -274,12 +274,12 @@ p {
 }
 
 .cursos__item {
+  margin-left: 20px;
   font-size: 14px;
   font-weight: 300;
   line-height: 28px;
   text-align: justify;
   text-justify: inter-word;
-  margin-left: 20px;
 }
 
 /* sección referencias */
