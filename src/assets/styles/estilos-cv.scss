@@ -97,11 +97,9 @@ p {
 .lista-iconos__link {
   font-size: 16px;
   color: $color3;
-}
-
-.lista-iconos__link:hover {
-  font-size: 18px;
-  color: $color3;
+  &:hover {
+    font-size: 18px;
+  }
 }
 
 .lista-iconos__item:last-child {
@@ -127,12 +125,10 @@ p {
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: all 0.3s ease-in-out;
-}
-
-.header-menu__link:hover,
-.header-menu__link:focus {
-  color: $color3;
-  text-decoration: none;
+  &:hover {
+    color: $color3;
+    text-decoration: none;
+  }
 }
 
 .copiright {
